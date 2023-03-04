@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}} {{!-- NOTE: inside partials file --}}
+</head>
+
+<body>
+    {{>navbar}} {{!-- NOTE: inside partials file --}}
+
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side div -->
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure class="errimg">
+                            <img src="./images/weather8.jpg" alt="ashfaq" class="img-fluid"
+                                title="404">
+                        </figure>
+
+                        <p>Welcome to MASQ Zone</p>
+                        <h1>{{errorMsg.msg}}</h1>
+                        <a href="/"><button>Go back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}} {{!-- NOTE: inside partials file --}}
+</body>
+
+</html>
